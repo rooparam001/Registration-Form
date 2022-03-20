@@ -1,0 +1,139 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Configuration Page</h1>
+
+          <div style="height:1rem"></div>
+    
+            <div class="col px-md-5">
+                  <h2>Choose Feilds from below given choices</h2>
+            </div>
+
+     <div class="card-body">
+
+          <div class="row mx-md-n5">
+            <div class="col px-md-5">
+                <div class="p-3 m-4 border bg-light">
+                  <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="first_name" checked>
+                      <label class="form-check-label" for="first_name">First Name</label>
+                  </div>
+                </div>
+            </div>
+            <div class="col px-md-5">
+                <div class="p-3 m-4 border bg-light">
+                  <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="last_name" checked>
+                      <label class="form-check-label" for="last_name">Last Name</label>
+                  </div>
+
+                </div>
+            </div>
+          </div>
+
+
+          <div class="row mx-md-n5">
+            <div class="col px-md-5">
+                <div class="p-3 m-4 border bg-light">
+                  <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="father_name" checked>
+                      <label class="form-check-label" for="father_name">Father Name</label>
+                  </div>
+                </div>
+            </div>
+            <div class="col px-md-5">
+                <div class="p-3 m-4 border bg-light">
+                  <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="mother_name" checked>
+                      <label class="form-check-label" for="mother_name">Mother Name</label>
+                  </div>
+
+                </div>
+            </div>
+          </div>
+
+          <div style="height:1rem"></div>
+
+          
+          <div class="row mx-md-n5">
+            <div class="col px-md-5">
+                <div class="p-3 m-4 border bg-light">
+                  <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="Phone_Number" checked>
+                      <label class="form-check-label" for="Phone_Number">Phone Number</label>
+                  </div>
+                </div>
+            </div>
+            <div class="col px-md-5">
+                <div class="p-3 m-4 border bg-light">
+                  <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="Gender" checked>
+                      <label class="form-check-label" for="Gender">Gender</label>
+                  </div>
+
+                </div>
+            </div>
+          </div>
+
+          
+          <div class="row mx-md-n5">
+            <div class="col px-md-5">
+                <div class="p-3 m-4 border bg-light">
+                  <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="Address" checked>
+                      <label class="form-check-label" for="Address">Address</label>
+                  </div>
+                </div>
+            </div>
+            <div class="col px-md-5">
+                <div class="p-3 m-4 border bg-light">
+                  <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="DOB" checked>
+                      <label class="form-check-label" for="DOB">Date Of birth</label>
+                  </div>
+
+                </div>
+            </div>
+          </div>
+
+          
+          <div class="row mx-md-n5">
+            <div class="col px-md-5">
+                <div class="p-3 m-4 border bg-light">
+                  <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="Qualification" checked>
+                      <label class="form-check-label" for="Qualification">Qualification</label>
+                  </div>
+                </div>
+            </div>
+            <div class="col px-md-5">
+                <div class="p-3 m-4 border bg-light">
+                  <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="Email_ID" checked>
+                      <label class="form-check-label" for="Email_ID">Email ID</label>
+                  </div>
+
+                </div>
+            </div>
+          </div>
+
+          <div style="height:1rem"></div>
+          <div style="height:1rem"></div>
+
+          <div class="row mx-md-n5">
+            <div class="col px-md-1">
+                    <button type = "button" class="btn btn-primary" id="submit_btn" asp-page="/Privacy" onclick="submit_data()">Submit</button> 
+            </div>
+            <div class="col px-md-1">
+                     <button type = "button" class="btn btn-primary" id="reset_btn" asp-page="/Privacy" onclick="reset_data()">Reset</button> 
+            </div>
+          </div>
+
+                      
+     </div>
+
+</div>

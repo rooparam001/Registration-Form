@@ -1,0 +1,153 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Registration Page";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+
+ <div class="text-center">
+
+          <div class="row mx-md-n5">
+            <div class="col px-md-5">
+                <div class="row mb-3 p-3 m-2" id="div_1">
+                    <label class="col-sm-4 col-form-label col-form-label-lg">First Name</label>
+                    <div class="col-sm-8" id="first_name_div">
+                        <input type="text" class="form-control form-control-lg" placeholder="Enter first name">
+                    </div>
+                </div>
+            </div>
+            <div class="col px-md-5">
+                <div class="row mb-3 p-3 m-2" id="div_2">
+                    <label class="col-sm-4 col-form-label col-form-label-lg">Last Name</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control form-control-lg" placeholder="Enter last name">
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="row mx-md-n5">
+            <div class="col px-md-5">
+                <div class="row mb-3 p-3 m-2" id="div_6">
+                    <label class="col-sm-4 col-form-label col-form-label-lg">Gender</label>
+                    <div class="col-sm-3 p-2">
+                         <input type="radio" class="form-check-input" name="gender" id="radioMale" checked>
+                         <label class="form-check-label" for="radioMale">Male</label>
+                    </div>
+                    <div class="col-sm-3 p-2">
+                         <input type="radio" class="form-check-input" name="gender" id="radioFemale">
+                         <label class="form-check-label" for="radioFemale">Female</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col px-md-5">
+                <div class="row mb-3 p-3 m-2" id="div_8">
+                    <label class="col-sm-4 col-form-label col-form-label-lg">Date Of Birth</label>
+                    <div class="col-sm-8">
+                        <div class="md-form md-outline input-with-post-icon datepicker">
+                          <input placeholder="Select date" type="date" id="dob" class="form-control">
+                        </div> 
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+          <div class="row mx-md-n5">
+            <div class="col px-md-5">
+                <div class="row mb-3 p-3 m-2" id="div_3">
+                    <label class="col-sm-4 col-form-label col-form-label-lg">Father's Name</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control form-control-lg" placeholder="Enter father's name">
+                    </div>
+                </div>
+            </div>
+            <div class="col px-md-5">
+                <div class="row mb-3 p-3 m-2" id="div_4">
+                    <label class="col-sm-4 col-form-label col-form-label-lg">Mother's Name</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control form-control-lg" placeholder="Enter Mother's name">
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="row mx-md-n5">
+            <div class="col px-md-5">
+                <div class="row mb-3 p-3 m-2" id="div_10">
+                    <label class="col-sm-4 col-form-label col-form-label-lg">Email ID</label>
+                    <div class="col-sm-8">
+                        <input type="email" class="form-control form-control-lg" placeholder="Enter email">
+                    </div>
+                </div>
+            </div>
+            <div class="col px-md-5">
+                <div class="row mb-3 p-3 m-2" id="div_5">
+                    <label class="col-sm-4 col-form-label col-form-label-lg">Phone Number</label>
+                    <div class="col-sm-8">
+                        <input type="tel" class="form-control form-control-lg" placeholder="Enter phone number">
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="row mx-md-n5">
+            <div class="col px-md-5">
+                <div class="row mb-3 p-3 m-2" id="div_9">
+                    <label class="col-sm-4 col-form-label col-form-label-lg">Qualifications</label>
+                    <div class="col-sm-8">
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                          <option selected value="1">Intermediate Level</option>
+                          <option value="2">Graduate</option>
+                          <option value="3">Post Graduate</option>
+                          <option value="4">Phd</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col px-md-5">
+                <div class="row mb-3 p-3 m-2" id="div_7">
+                     <label class="col-sm-4 col-form-label col-form-label-lg">Address</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control form-control-lg" placeholder="Enter address">
+
+
+                        <div class="row g-3 m-0">
+                            <div class="col-12">
+                                <select class="form-select">
+                                    <option>Rajasthan</option>
+                                    <option>Haryana</option>
+                                    <option>Delhi</option>
+                                    <option>Maharastra</option>
+                                    <option>Odissa</option>
+                                    <option>Uttar Pradesh</option>
+                                    <option>Goa</option>
+                                    <option>Punjab</option>
+                                </select>
+                            </div>
+                            <div class="col-9">
+                                <input type="text" class="form-control" placeholder="City">
+                            </div>
+                            
+                            <div class="col-7">
+                                <input type="tel" maxlength="6" class="form-control" placeholder="Zip">
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+
+          <div style="height:1rem"></div>
+          <div style="height:1rem"></div>
+
+          <button type = "button" class="btn btn-primary" onclick="btn_back()">Back</button>
+
+
+     </div>
+
